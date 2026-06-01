@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { NavigationContainer } from "./src/routes/app.route";
+import { Loading } from "./src/components/Loading";
+import { useFonts } from "expo-font";
+import { 
+  Manrope_400Regular,
+  Manrope_600SemiBold, 
+  Manrope_700Bold, 
+  Manrope_800ExtraBold
+} from "@expo-google-fonts/manrope";
+
+const queryClient = new QueryClient();
 
 export default function App() {
+  const [ fontsLoaded ] = useFonts({
+    Manrope_400Regular,
+    Manrope_600SemiBold,
+    Manrope_700Bold,
+    Manrope_800ExtraBold
+  });
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <QueryClientProvider client={queryClient}>
+      <StatusBar 
+        backgroundColor="transparent"
+        style='dark'
+        translucent
+        animated
+      />
+      { fontsLoaded ? <NavigationContainer /> : <Loading /> }
+    </QueryClientProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
