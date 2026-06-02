@@ -25,6 +25,18 @@ O objetivo do projeto é facilitar a consulta de veículos na Tabela FIPE, permi
 - Lista de consultas salvas com busca e filtro por tipo.
 - Navegação por abas entre `Buscar` e `Salvos`.
 
+## Screenshots
+
+As imagens abaixo mostram algumas telas do aplicativo:
+
+| Tela | Descrição | Screenshot |
+| --- | --- | --- |
+| 1 | Tela inicial de consulta, com seleção de tipo de veículo e campos ainda bloqueados até iniciar a busca. | ![Tela 1](assets/screenshot_1.png) |
+| 2 | Consulta preenchida com carro selecionado, marca, modelo e ano já definidos para buscar o valor da FIPE. | ![Tela 2](assets/screenshot_2.png) |
+| 3 | Tela de detalhes com valor atual, dados do veículo e gráfico com o histórico dos preços. | ![Tela 3](assets/screenshot_3.png) |
+| 4 | Aba de salvos exibindo a lista de consultas favoritas organizadas por tipo de veículo. | ![Tela 4](assets/screenshot_4.png) |
+| 5 | Lista de salvos com busca ativa, mostrando o filtro aplicado e o resultado correspondente. | ![Tela 5](assets/screenshot_5.png) |
+
 ## Bibliotecas utilizadas
 
 ### Principais
