@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#F7F9FB"
   },
   text: {
+    width: "100%",
     color: "#3980F4",
     fontSize: 16,
     fontFamily: "Manrope_600SemiBold",

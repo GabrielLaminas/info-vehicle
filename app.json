@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "info-vehicle",
+    "name": "Info Vehicle",
     "slug": "info-vehicle",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -29,6 +29,11 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "21e22fce-90ff-41f1-a5ba-e6b5f6e98b4d"
+      }
+    }
   }
 }
